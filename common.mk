@@ -118,6 +118,12 @@ PRODUCT_PACKAGES += \
     vendor.display.config@1.0 \
     vendor.display.config@2.0
 
+# Default Sounds
+PRODUCT_PRODUCT_PROPERTIES += \
+    ro.config.ringtone=Ganymede.ogg \
+    ro.config.notification_sound=End_note.ogg \
+    ro.config.alarm_alert=Argon.ogg
+
 # fastbootd
 PRODUCT_PACKAGES += \
     fastbootd
