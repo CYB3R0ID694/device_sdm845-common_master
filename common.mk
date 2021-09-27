@@ -164,10 +164,6 @@ PRODUCT_PACKAGES += \
     BluetoothQti
 
 
-# Media
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/media/media_profiles_vendor.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/media_profiles_vendor.xml
-
 PRODUCT_PACKAGES += \
     libavservices_minijail
 
