@@ -6,7 +6,7 @@
   {
     "repository"  : "vendor_oneplus",
     "target_path" : "vendor/oneplus"
-  }  
+  },
   {
     "repository"  : "kdrag0n/proton-clang",
     "branch"      : "master",
