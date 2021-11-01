@@ -192,7 +192,7 @@ PRODUCT_BOOT_JARS += \
 
 # Power
 PRODUCT_PACKAGES += \
-    power.qcom:64
+    power.qcom
     
 # Remove unwanted packages
 PRODUCT_PACKAGES += \
