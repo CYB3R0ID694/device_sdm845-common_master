@@ -65,13 +65,6 @@ public class DeviceExtras extends PreferenceFragment
     private static final String PREF_DOZE = "advanced_doze_settings";
     public static final String KEY_FPS_INFO = "fps_info";
 	
-    public static final String KEY_VIBSTRENGTH = "vib_strength";
-    private VibratorStrengthPreference mVibratorStrength;
-    public static final String KEY_CALL_VIBSTRENGTH = "vib_call_strength";
-    private VibratorCallStrengthPreference mVibratorCallStrength;
-    public static final String KEY_NOTIF_VIBSTRENGTH = "vib_notif_strength";
-    private VibratorNotifStrengthPreference mVibratorNotifStrength;
-	
     private static TwoStatePreference mDCModeSwitch;	
     private static TwoStatePreference mHBMModeSwitch;
     private static TwoStatePreference mAutoHBMSwitch;
@@ -96,16 +89,6 @@ public class DeviceExtras extends PreferenceFragment
         win.setNavigationBarDividerColor(res.getColor(R.color.primary_color));
 
         getActivity().getActionBar().setDisplayHomeAsUpEnabled(true);
-		
-        mVibratorStrength = (VibratorStrengthPreference) findPreference(KEY_VIBSTRENGTH);
-        if (mVibratorStrength != null)
-            mVibratorStrength.setEnabled(VibratorStrengthPreference.isSupported());
-        mVibratorCallStrength = (VibratorCallStrengthPreference) findPreference(KEY_CALL_VIBSTRENGTH);
-        if (mVibratorCallStrength != null)
-            mVibratorCallStrength.setEnabled(VibratorCallStrengthPreference.isSupported());
-        mVibratorNotifStrength = (VibratorNotifStrengthPreference) findPreference(KEY_NOTIF_VIBSTRENGTH);
-        if (mVibratorNotifStrength != null)
-            mVibratorNotifStrength.setEnabled(VibratorNotifStrengthPreference.isSupported());
 		
         mDCModeSwitch = (TwoStatePreference) findPreference(KEY_DC_SWITCH);
         mDCModeSwitch.setEnabled(DCModeSwitch.isSupported());
