@@ -51,6 +51,10 @@
 
     <!-- BurnIn protection. This should be enabled on devices that have OLED displays -->
     <bool name="config_enableBurnInProtection">true</bool>
+	
+	<!-- Enable Burn in protection for Status Bar -->
+    <bool name="config_statusBarBurnInProtection">true</bool>
+    <integer name="config_shift_interval">60</integer>
 
     <!-- System Info -->
     <string name="config_sysCPUTemp">/sys/class/thermal/thermal_zone4/temp</string>
