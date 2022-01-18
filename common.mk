@@ -155,6 +155,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.light@2.0-service.oneplus_sdm845
 
+# LiveDisplay
+PRODUCT_PACKAGES += \
+    lineage.livedisplay@2.0-service.oneplus_sdm845
+
 # QTI Bluetooth
 PRODUCT_PACKAGES += \
     BluetoothQti
