@@ -34,7 +34,7 @@
             android:summary="@string/auto_hbm_summary"
             android:title="@string/auto_hbm_title" />
 
-        <com.palladium.device.DeviceExtras.AutoHBMThresholdPreference
+        <com.aosp.device.DeviceExtras.AutoHBMThresholdPreference
             android:key="auto_hbm_threshold"
             android:title="@string/auto_hbm_threshold_title"
             android:summary="@string/auto_hbm_threshold_summary" />
@@ -51,8 +51,8 @@
             android:summary="@string/panel_category_summary"
             android:persistent="false" >
             <intent android:action="android.intent.action.MAIN"
-                    android:targetPackage="com.palladium.device.DeviceExtras"
-                    android:targetClass="com.palladium.device.DeviceExtras.PanelSettingsActivity" />
+                    android:targetPackage="com.aosp.device.DeviceExtras"
+                    android:targetClass="com.aosp.device.DeviceExtras.PanelSettingsActivity" />
         </Preference>
     </PreferenceCategory>
 	
@@ -67,8 +67,8 @@
             android:summary="@string/ambient_display_gestures_summary"
             android:persistent="false" >
             <intent android:action="android.intent.action.MAIN"
-                    android:targetPackage="org.resurrection.device.DeviceExtras.doze"
-                    android:targetClass="org.resurrection.device.DeviceExtras.doze.DozeSettingsActivity" />
+                    android:targetPackage="com.aosp.device.DeviceExtras.doze"
+                    android:targetClass="com.aosp.device.DeviceExtras.doze.DozeSettingsActivity" />
         </Preference>
     </PreferenceCategory>
 
