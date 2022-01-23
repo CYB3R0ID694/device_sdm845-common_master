@@ -31,7 +31,7 @@ $(call inherit-product, vendor/addons/oneplus/apps/config.mk)
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
-    $(LOCAL_PATH)/overlay-palladium
+    $(LOCAL_PATH)/overlay-aosp
 
 PRODUCT_PACKAGES += \
     OdmOverlay-OPSystemUI \
